@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://fre2tndvpe1e"]
+
+[ext_resource type="Script" path="res://title.gd" id="1_r1d4f"]
+[ext_resource type="Texture2D" uid="uid://b5fh7dvht5psf" path="res://title.png" id="2_qqvcn"]
+[ext_resource type="AudioStream" uid="uid://edy4omnvoen0" path="res://Starweed_Title.mp3" id="3_ah21m"]
+
+[node name="Title" type="Node2D"]
+script = ExtResource("1_r1d4f")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(128, 96)
+texture = ExtResource("2_qqvcn")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_ah21m")
+autoplay = true
+parameters/looping = true
