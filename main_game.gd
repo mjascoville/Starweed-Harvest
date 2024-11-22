@@ -69,7 +69,7 @@ func _on_game_over():
 		config.set_value("score", "highscore", high_score)
 		config.save("user://hscore.cfg")
 
-	end.get_node("Label").text = "Game Over\nScore: " + str(score) + "\n\nHigh Score: " + str(score)
+	end.get_node("Label").text = "Game Over\nScore: " + str(score) + "\n\nHigh Score: " + str(high_score)
 	add_child(end)
 
 	get_tree().paused = true  
